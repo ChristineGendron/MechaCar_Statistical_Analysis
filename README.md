@@ -25,7 +25,7 @@ The weight capacities of multiple suspension coils were tested to determine if t
 ![summarize lots del 2](Images/lot_summarize_del2.png)
 
 - The variance of the three lots combined meets the design specifications at 62.29356 lbs. as you can see above.
-- Individually, only lots 1 and 2 met that goal. Manufacturing lot 3 has a variance of 170.2861224 lbs per sqare inch, far above the 100 lb limit.
+- Individually, only lots 1 and 2 met that goal. Manufacturing lot 3 has a variance of 170.2861224 lbs per square inch, far above the 100 lb limit.
 
 ### Technical Analysis 3: T-Tests on Suspension Coils
 
@@ -36,3 +36,11 @@ We'll determine if all manufacturing lots and each lot individually are statisti
 ![t-test individual lots del 3](Images/ttest_indiv_del3.png)
 
 We only reject the null hypothesis in one of the four t-tests- the one performed for lot 3. Lot 3 has a mean PSI that is statistically significantly different from the population mean of 1,500 (p-value of below 0.05).
+
+## Proposed Study Design: MechaCar vs Competition
+
+One metric that has not been included in the original MechaCar datasets and would be of interest to consumers is highway fuel efficiency.
+
+- Data showing MPG on highway routes could be provided in two sets- one for MechaCars, and one that combines a representative sample of comparable vehicles across other manufacturers.
+- The alternative hypothesis is that MechaCars are statistically more fuel efficient on highway routes than other manufacturers' vehicles.
+- This hypothesis would be tested using a two-sample t-test, using one sample from each dataset.
